@@ -1,0 +1,10 @@
+create database Myapp;
+use Myapp;
+create table Users(username varchar(100),passwd varchar(100));
+insert into Users values('avi','bus');
+select username,passwd from Users;
+update Users set passwd='hello' where username='avi';
+show tables;
+desc Users;
+select * from Users where username = 'avi' and passwd='avi'
+delete from Users whre username = 'avi'
